@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>PR Construction</title>
+</head>
+<body>
+    <nav class="navba background" id="home">
+        <ul class="nav-list">
+            <div class="logo"><img src="image/PR construction logo.jpg" alt="logo"></div>
+            <li><a href ="index.html">Home</a></li>
+            <li><a href ="about.html">About</a></li>
+            <li><a href ="service.html">Service</a></li>
+            <li><a href ="contact.html">Contact</a></li>
+        </ul>    
+    </nav>
+    <section class="contact" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+        <form method="post" autocomplete="off" name="google-sheet">
+            <input class="form-input" type="text" name="Name" id="name" placeholder="Enter your Name" value="" required=""/> 
+            <input class="form-input" type="text" name="Phone" id="phone" placeholder="Enter your Phone" value="" required=""/> 
+            <input class="form-input" type="text" name="Email" id="email" placeholder="Enter your Email" value="" required=""/> 
+            <textarea class="form-input" name="Text" id="text" cols="30" rows="10" placeholder="Eleborate your concern" value="" required=""></textarea>
+            <input type="submit" name="Submit" class="btn btn-primary" value="SUBMIT"/>
+        </form>
+        </div>
+    </section>
+
+
+    
+    <section class="endsection">
+        <div class="row">
+            <div class="col-md-6 cont">
+                <h1 class="min-text text-center"><u><b>Contact us</u></b></h1>
+             <h1 class="min-text text-center">PV CONSTRUCTION<br/><br/>K-2, Tower, Gali no-3 Sector-44,<br/>Noida, Gautam Budha Nagar,<br/>Uttar Pradesh, 20130<br/><br/><b>Phone :</b> 9716512474<br/>
+             <b>Email : </b><a href="prabhuram9300@gmail.com">prabhuram9300@gmail.com</a>
+            </h1>
+            <div class="row er ">
+                <div class="col-md-5 er">
+                <a href="https://www.facebook.com/Prabhu-Ram-Construction-100666255480241/?ti=as"><img class="endsectionimg" src="image/facebook.png"/></a>
+               </div>
+               <div class="col-md-1 er">
+                <a href="https://www.facebook.com/Prabhu-Ram-Construction-100666255480241/?ti=as"><img class="endsectionimg" src="image/instagram.png"/></a>
+               </div>
+               <div class="col-md-1 er">
+                <a href="https://www.facebook.com/Prabhu-Ram-Construction-100666255480241/?ti=as"><img class="endsectionimg" src="image/linkedin.png"/></a>
+               </div>
+            </div>
+            <br/>
+         </div>
+            <div class="col-md-6 address">
+                <h1 class="min-text text-center"><u><b>About us</u></b></h1>
+             <h1 class="min-text text-center">Established in  Noida, (Uttar Pradesh) India in the year 2018,<br/>
+                We “Prabhu Ram Construction ,” are engaged in providing various<br/>
+                kind of civil construction service,that include  Civil Construction,<br/>
+                Interior Designing Services, Pre Engineering Building, Prefabricated<br/>
+                Structure, Residential Interior Designer, Civil Construction Services<br/> 
+                Rainwater Harvesting, Electrical Works Horticulture Services, Plumbing<br/>
+                Contractors, Roads, Highways & Industrial Roads,Designing, Seawage <br/>
+                Treatment Plant, Fabrication and Laying Service, Interiors and Exteriors<br/>
+                 services.These are offered as per the requirement of our esteemed clients.</h1>
+            </div>  
+        </div>
+    
+    </section>
+    <footer class="bg-dard text-center">
+        <p class="min-text text-center">all copyrights © reserved by PR Construction private limited<br/>
+            website is designed by Akash Sharma </p>
+    </footer>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxIaB8nnfL2CJ3wO5PuBinuKx6Z2Jt131zf0q8UdQ7n0xH0ljAXAD-48oEgr7WW040-/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
+            
+         
+    

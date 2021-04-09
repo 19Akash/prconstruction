@@ -1,0 +1,73 @@
+html{
+  font-size: 62.5%;
+}
+.ser
+{
+    height: auto;
+}
+.s-rt
+    {
+      height: 66.5rem;
+      width:  auto;
+      background:url(image/ab1.jpg);
+      animation-name: example;
+      animation-duration: 30s;
+      animation-iteration-count: 5;
+    }
+    @keyframes example {
+        0%   {background:url(image/ab2.jpg)}
+        10%  {background:url(image/ab2.jpeg)}
+        20%  {background:url(image/ab5.jpg)}
+       
+
+      }
+
+    .border-devider-s {
+        border-top: .8rem solid rgb(32, 131, 138);
+        border-radius: .5rem;
+        margin: 0 auto;
+        width: 20rem;  
+      }
+    .s-intro
+    {
+        height: auto;
+        background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    }
+    .border-devider-s-intro {
+        border-top: .8rem solid rgb(122, 60, 24);
+        border-radius: .5rem;
+        margin: 0 auto;
+        width: 20rem;  
+      }
+    .text-min-s{
+        font-size: 1.8rem;
+        padding-top: 2rem;
+        text-align: left;
+        font-family: 'Nerko One', cursive;    
+    }
+    .border-devider-s-sub {
+        border-top: .8rem solid rgb(230, 226, 18);
+        border-radius: .5rem;
+        width: 15rem;  
+    }
+      .s-call{
+          padding-top: 10rem;
+          color: white;
+          font-size: 6rem;
+      }
+    
+      @media(max-width:998px) {
+          
+        html{
+            font-size:55%
+        }
+          
+      }
+      @media(max-width:768px) {
+          
+        html{
+            font-size:45%
+        }
+          
+      }
+    
